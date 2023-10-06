@@ -17,7 +17,8 @@
     --First-neutral-color: hsl(0, 0%, 81%);
     --Second-neutral-color: hsl(210, 46%, 95%);
 
-    
+    /* Opacity */
+    --First-opacity: hsla(210, 46%, 95%, 0.5);
 }
 
 /* *Reset styles */
@@ -26,6 +27,14 @@ body{
     font-size: 13px;
 }
 
+main{
+    background-color: var(--Second-neutral-color);
+}
+
+p{
+    margin: 0;
+    
+}
 /* *Bootstrap styles */
 
 
@@ -34,33 +43,89 @@ body{
 .box-1{
     width: 329px;
     height: 446px;
-    background-color: red;
+    background-color: var(--First-primary-color);
+    border-radius: 10px;
+    margin: 13px 13px;
+
+    background-image: url(../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: top right 26px;
 }
 
 .box-2{
     width: 329px;
     height: 242px;
-    background-color: red;
+    background-color: var(--Second-primary-color);
+    border-radius: 10px;
+    margin: 13px 13px;
 }
 
 .box-3{
     width: 329px;
     height: 225px;
-    background-color: red;
+    background-color: var(--Fourth-primary-color);
+    border-radius: 10px;
+    margin: 13px 13px;
 }
 
 .box-4{
     width: 329px;
     height: 386px;
-    background-color: red;
+    background-color: var(--Third-primary-color);
+    border-radius: 10px;
+    margin: 13px 13px;
 }
 
 .box-5{
     width: 329px;
     height: 440px;
-    background-color: red;
+    background-color: var(--Fourth-primary-color);
+    margin: 13px 13px;
 }
 
+.title-grid{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+}
+
+.p-name{
+    color: var(--Second-neutral-color);
+    margin-top: 26px;
+}
+
+.p-graduate{
+    color: var(--Second-neutral-color);
+    opacity: 0.5;
+    font-size: 11px;
+    margin-bottom: 13px;
+}
+
+.p-review{
+    color: var(--Second-neutral-color);
+    font-size: 20px;
+    line-height: normal;
+    padding: 0 30px;
+    margin-bottom: 20px;
+}
+
+.p-quote{
+    color: var(--Second-neutral-color);
+    line-height: 18px;
+    opacity: 0.5;
+    padding-left: 30px;
+    padding-right: 53px;
+}
+
+.border-img{
+    border: 2px solid var(--First-opacity);
+}
+
+.m-img{
+    margin-top: 26px;
+    margin-bottom: 13px;
+    padding-left: 28px;
+}
 
 /* *Breakpoints */
 /* sm */
@@ -78,31 +143,27 @@ body{
     .box-1{
         width: 540px;
         height: 280px;
-        background-color: red;
+        background-position: top right 82px;
     }
     
     .box-2{
         width: 255px;
         height: 280px;
-        background-color: red;
     }
     
     .box-3{
         width: 255px;
         height: 280px;
-        background-color: red;
     }
     
     .box-4{
         width: 540px;
         height: 280px;
-        background-color: red;
     }
     
     .box-5{
         width: 255px;
-        height: 570px;
-        background-color: red;
+        height: 586px;
     }
 }
 
