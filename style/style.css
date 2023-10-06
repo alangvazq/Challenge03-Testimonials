@@ -1,11 +1,11 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
 }
 
 /* *Variables */
 
-:root{
+:root {
     /* Primary */
 
     --First-primary-color: hsl(263, 55%, 52%);
@@ -22,25 +22,23 @@
 }
 
 /* *Reset styles */
-body{
+body {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 13px;
-}
-
-main{
     background-color: var(--Second-neutral-color);
 }
 
-p{
+p {
     margin: 0;
-    
+
 }
+
 /* *Bootstrap styles */
 
 
 /* *My styles */
 
-.box-1{
+.box-1 {
     width: 329px;
     height: 446px;
     background-color: var(--First-primary-color);
@@ -52,7 +50,7 @@ p{
     background-position: top right 26px;
 }
 
-.box-2{
+.box-2 {
     width: 329px;
     height: 242px;
     background-color: var(--Second-primary-color);
@@ -60,7 +58,7 @@ p{
     margin: 13px 13px;
 }
 
-.box-3{
+.box-3 {
     width: 329px;
     height: 225px;
     background-color: var(--Fourth-primary-color);
@@ -68,7 +66,11 @@ p{
     margin: 13px 13px;
 }
 
-.box-4{
+.box-3 p {
+    color: var(--Second-primary-color);
+}
+
+.box-4 {
     width: 329px;
     height: 386px;
     background-color: var(--Third-primary-color);
@@ -76,40 +78,44 @@ p{
     margin: 13px 13px;
 }
 
-.box-5{
+.box-5 {
     width: 329px;
     height: 440px;
     background-color: var(--Fourth-primary-color);
     margin: 13px 13px;
 }
 
-.title-grid{
+.box-5 p {
+    color: var(--Second-primary-color);
+}
+
+.title-grid {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto;
 }
 
-.p-name{
+.p-name {
     color: var(--Second-neutral-color);
-    margin-top: 26px;
+    margin-top: 20px;
 }
 
-.p-graduate{
+.p-graduate {
     color: var(--Second-neutral-color);
     opacity: 0.5;
     font-size: 11px;
     margin-bottom: 13px;
 }
 
-.p-review{
+.p-review {
     color: var(--Second-neutral-color);
     font-size: 20px;
     line-height: normal;
-    padding: 0 30px;
+    padding: 0 35px;
     margin-bottom: 20px;
 }
 
-.p-quote{
+.p-quote {
     color: var(--Second-neutral-color);
     line-height: 18px;
     opacity: 0.5;
@@ -117,12 +123,16 @@ p{
     padding-right: 53px;
 }
 
-.border-img{
+.box-4 .p-quote {
+    padding-right: 37px;
+}
+
+.border-img {
     border: 2px solid var(--First-opacity);
 }
 
-.m-img{
-    margin-top: 26px;
+.m-img {
+    margin-top: 20px;
     margin-bottom: 13px;
     padding-left: 28px;
 }
@@ -140,30 +150,46 @@ p{
 /* xl */
 @media (min-width: 1200px) {
 
-    .box-1{
+    .box-1 {
         width: 540px;
         height: 280px;
         background-position: top right 82px;
     }
-    
-    .box-2{
+
+    .box-2 {
         width: 255px;
         height: 280px;
     }
-    
-    .box-3{
+
+    .box-3 {
         width: 255px;
         height: 280px;
     }
-    
-    .box-4{
+
+    .box-4 {
         width: 540px;
         height: 280px;
     }
-    
-    .box-5{
+
+    .box-5 {
         width: 255px;
         height: 586px;
+    }
+
+    .box-1 .p-quote {
+        padding-right: 27px;
+    }
+
+    .box-2 .p-quote {
+        padding-right: 30px;
+    }
+
+    .box-3 .p-quote {
+        padding-right: 30px;
+    }
+
+    .box-5 .p-quote {
+        padding-right: 30px;
     }
 }
 
